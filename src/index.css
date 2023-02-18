@@ -19,6 +19,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1,
+h2,
+h3 {
+  font-family: Anton, Arial, Helvetica, sans-serif;
+}
 /* util  */
 .my-hr {
   display: inline-block;
@@ -250,4 +255,90 @@ code {
   background: white;
   color: black;
   font-family: Anton, Arial, Helvetica, sans-serif;
+}
+
+/* nutrition */
+#nutrition {
+  background: white;
+  color: black;
+  padding: 3rem;
+}
+.nutrition__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nutrition__img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 1rem;
+}
+.nutrition__caption {
+  text-align: left;
+}
+@media screen and (min-width: 1024px) {
+  .nutrition__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+  }
+  .nutrition__img {
+    margin: auto;
+  }
+  .nutrition__caption {
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 3.5rem;
+  }
+}
+/* certifications */
+#certification {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  background-color: white;
+}
+.certification__img {
+  max-width: 100%;
+  height: auto;
+}
+.certification__content {
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.certification__heading {
+  font-style: italic;
+}
+.certification__list-item {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.certification__btn {
+  width: 50%;
+  align-self: center;
+}
+@media screen and (min-width: 1024px) {
+  #certification {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 10rem;
+  }
+  .certification__btn {
+    padding: 1rem 0.5rem;
+    width: 30%;
+  }
+  .certification__img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+/* gallery */
+#gallery {
+  /* margin-top: 5rem; */
+}
+.gallery__heading {
+  margin: 2rem 1rem;
 }

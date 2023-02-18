@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import picture1 from "../Images/adidas-images/1.jpg";
 import picture2 from "../Images/adidas-images/2.jpg";
 import picture3 from "../Images/adidas-images/3.jpg";

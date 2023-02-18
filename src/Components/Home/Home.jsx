@@ -7,6 +7,10 @@ import customhHr from "../Images/custom-hr.png";
 import Services from "./Services";
 import Resume from "./Resume";
 import Adidas from "./Adidas";
+import Nutrition from "./Nutrition";
+import Certification from "./Certification";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
 export default function Home() {
   useEffect(() => {
     document.title = "Home - Paradise";
@@ -23,6 +27,11 @@ export default function Home() {
       <div className="custom-hr"></div>
       <Resume />
       <Adidas />
+      <Nutrition />
+      <div className="custom-hr"></div>
+      <Certification />
+      <Gallery />
+      <Contact />
     </>
   );
 }
