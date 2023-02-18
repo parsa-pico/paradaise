@@ -67,13 +67,13 @@ export default function NavBar() {
                 <Nav.Link className="nav-link" href="#services">
                   my services
                 </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                <Nav.Link className="nav-link" href="#gallery">
                   gallery
                 </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                {/* <Nav.Link className="nav-link" href="#action2">
                   weblog
-                </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                </Nav.Link> */}
+                <Nav.Link className="nav-link" href="#contact">
                   contact
                 </Nav.Link>
               </Nav>

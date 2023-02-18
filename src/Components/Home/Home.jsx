@@ -11,6 +11,7 @@ import Nutrition from "./Nutrition";
 import Certification from "./Certification";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
+import Messeage from "./Messeage";
 export default function Home() {
   useEffect(() => {
     document.title = "Home - Paradise";
@@ -32,6 +33,10 @@ export default function Home() {
       <Certification />
       <Gallery />
       <Contact />
+      <Messeage />
+      <div className="push" />
+
+      <p className="m-2">copyright © 2022 Paradise</p>
     </>
   );
 }
