@@ -4,7 +4,7 @@ import item1 from "../Images/IMG_7232-960x720.jpg";
 import item2 from "../Images/IMG_6898-960x720.jpg";
 export default function HeaderCarousel() {
   return (
-    <div>
+    <div id="header-carousel">
       <Carousel className="relative" fade>
         <Carousel.Item>
           <img className="d-block w-100" src={item1} alt="First slide" />

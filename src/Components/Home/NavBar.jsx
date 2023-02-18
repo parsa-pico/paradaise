@@ -45,25 +45,26 @@ export default function NavBar() {
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title
+              {/* <Offcanvas.Title
                 className="upper-case"
                 id={`offcanvasNavbarLabel-expand-${expand}`}
+                style={{ color: "black" }}
               >
                 menu
-              </Offcanvas.Title>
+              </Offcanvas.Title> */}
             </Offcanvas.Header>
             <Offcanvas.Body className="my-nav">
               <Nav className="justify-content-end flex-grow-1 pe-3  upper-case">
-                <Nav.Link className="nav-link" href="#action1">
+                <Nav.Link className="nav-link " href="#top">
                   start
                 </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                <Nav.Link className="nav-link" href="#program">
                   training
                 </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                <Nav.Link className="nav-link" href="#about-me-wrapper">
                   about me
                 </Nav.Link>
-                <Nav.Link className="nav-link" href="#action2">
+                <Nav.Link className="nav-link" href="#services">
                   my services
                 </Nav.Link>
                 <Nav.Link className="nav-link" href="#action2">

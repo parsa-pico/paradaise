@@ -10,7 +10,7 @@ export default function Program() {
     ["sat", "Stretch and Relaxing"],
   ];
   return (
-    <div className="mt-5">
+    <div id="program" className="mt-5">
       <header>
         <h3 className="program-header">4-WEEK BEGINNER’S WORKOUT PROGRAM</h3>
       </header>
