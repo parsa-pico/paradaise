@@ -1,13 +1,103 @@
+:root {
+  --my-bg-color: #12111b;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--my-bg-color) !important;
+  color: white !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* util  */
+.my-hr {
+  display: inline-block;
+  width: 45% !important;
+  width: 10px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.upper-case {
+  text-transform: uppercase;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.header__caption {
+  top: 0;
+}
+/* nav bar */
+.logo {
+  max-height: 150px;
+}
+.my-nav {
+  background-color: #12111b;
+}
+.nav-link {
+  color: white !important;
+  font-family: "Roboto Mono", monospace;
+}
+.nav-link:hover {
+  color: orangered !important;
+}
+/* home */
+
+/* programs */
+.program-box {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem;
+  background-image: url("./Components/Images/hr.png");
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position-x: center !important;
+  /* background-position-y: center !important; */
+}
+.program-box__heading {
+  position: relative;
+  top: -30px;
+}
+.program-box__caption {
+  position: relative;
+  top: 30px;
+}
+.program-header {
+  margin-bottom: 10rem;
+}
+@media screen and (min-width: 544px) {
+  .program-box {
+    background-size: 150%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .programs__content {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 5rem;
+  }
+  .program-box {
+    margin: 0;
+    width: 100%;
+  }
+  .program-box {
+    background-size: 300%;
+  }
 }
