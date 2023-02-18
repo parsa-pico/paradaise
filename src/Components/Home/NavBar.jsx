@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -13,12 +13,30 @@ export default function NavBar() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  useEffect(() => {
+    function updatePosition() {
+      if (window.scrollY > 100 && window.innerWidth > 1024) {
+        document.getElementById("logo").style.height = "50px";
+      } else if (window.scrollY > 100 && window.innerWidth < 1024) {
+        document.getElementById("logo").style.height = "30px";
+      } else if (window.scrollY < 5 && window.innerWidth > 1024)
+        document.getElementById("logo").style.height = "150px";
+      else if (window.scrollY < 5 && window.innerWidth < 1024)
+        document.getElementById("logo").style.height = "50px";
+    }
+
+    window.addEventListener("scroll", updatePosition);
+    updatePosition();
+
+    return () => window.removeEventListener("scroll", updatePosition);
+  }, []);
+
   return (
     <div className="my-nav">
       <Navbar variant="dark" expand={expand}>
         <Container fluid>
           <Navbar.Brand href="#">
-            <img className="logo" src={logo} alt="logo" />
+            <img id="logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas

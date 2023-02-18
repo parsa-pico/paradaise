@@ -10,13 +10,13 @@ export default function Program() {
     ["sat", "Stretch and Relaxing"],
   ];
   return (
-    <div>
+    <div className="mt-5">
       <header>
         <h3 className="program-header">4-WEEK BEGINNER’S WORKOUT PROGRAM</h3>
       </header>
       <div className="programs__content">
-        {details.map((detail) => {
-          return <ProgramBox day={detail[0]} caption={detail[1]} />;
+        {details.map((detail, index) => {
+          return <ProgramBox key={index} day={detail[0]} caption={detail[1]} />;
         })}
       </div>
     </div>

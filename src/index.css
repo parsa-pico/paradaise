@@ -44,12 +44,23 @@ code {
 .header__caption {
   top: 0;
 }
+.custom-hr {
+  width: 100%;
+  background-image: url("./Components/Images/custom-hr.png");
+  background-size: 200vw;
+  height: 8px;
+  background-repeat: no-repeat;
+}
 /* nav bar */
-.logo {
-  max-height: 150px;
+#logo {
+  height: 50px;
+  transition: 0.2s;
 }
 .my-nav {
   background-color: #12111b;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 .nav-link {
   color: white !important;
@@ -58,13 +69,18 @@ code {
 .nav-link:hover {
   color: orangered !important;
 }
+@media screen and (min-width: 1024px) {
+  #logo {
+    height: 150px;
+  }
+}
 /* home */
 
 /* programs */
 .program-box {
   display: flex;
   flex-direction: column;
-  margin: 6rem;
+  margin: 6rem 1rem;
   background-image: url("./Components/Images/hr.png");
   background-repeat: no-repeat;
   background-size: 250%;
@@ -81,6 +97,7 @@ code {
 }
 .program-header {
   margin-bottom: 10rem;
+  font-family: "Roboto Mono", monospace;
 }
 @media screen and (min-width: 544px) {
   .program-box {
@@ -99,5 +116,64 @@ code {
   }
   .program-box {
     background-size: 300%;
+  }
+}
+/* about me  */
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+.about-me__text {
+  margin-top: 2rem;
+}
+.about-me__heading {
+  font-family: Anton, Arial, Helvetica, sans-serif;
+}
+.about-me__caption {
+  margin-top: 2rem;
+  margin-right: 5rem;
+  margin-left: 2rem;
+  text-align: left;
+}
+.about-me__btn {
+  background-color: #777de8 !important;
+  margin: 5rem 2rem;
+  padding: 1rem 3rem !important;
+}
+.about-me__last-heading {
+  max-width: 15ch;
+  margin-left: 2rem;
+  text-align: left;
+}
+.about-me__img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+  }
+
+  .about-me__text {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .about-me__caption {
+    margin: 0;
+  }
+  .about-me__btn {
+    margin-bottom: 0;
+  }
+  .about-me__img {
+    max-height: 800px;
+    object-fit: cover;
+  }
+  #about-me-wrapper .about-me:nth-of-type(2n) {
+    margin-top: 0;
+  }
+  .my-order-1 {
+    order: 1;
   }
 }
