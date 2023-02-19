@@ -8,11 +8,11 @@ export default function Contact() {
       </div>
       <div className="contact__content">
         <div className="contact__icons">
-          <a href="#" class="my-icon my-icon--facebook"></a>
-          <a href="#" class="my-icon my-icon--telegram"></a>
-          <a href="#" class="my-icon my-icon--whatsapp"></a>
-          <a href="#" class="my-icon my-icon--instagram"></a>
-          <a href="#" class="my-icon my-icon--linkedin"></a>
+          <a href="#" className="my-icon my-icon--facebook"></a>
+          <a href="#" className="my-icon my-icon--telegram"></a>
+          <a href="#" className="my-icon my-icon--whatsapp"></a>
+          <a href="#" className="my-icon my-icon--instagram"></a>
+          <a href="#" className="my-icon my-icon--linkedin"></a>
         </div>
         <div className="contact__details">
           <div>
@@ -20,7 +20,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <a href="mailto:info@paradisef.com">info@paradisef.com</a>
+            <a href="mailto:info@paradisef.com">pardis_foroozmand@yahoo.com</a>
           </div>
         </div>
       </div>

@@ -11,7 +11,11 @@ export default function Services() {
       <h1 className="text-black">My Services</h1>
       <div className="card-wrapper">
         <Card className="services__card">
-          <Card.Img variant="top" src={picture1} />
+          <Card.Img
+            className="services__card-img"
+            variant="top"
+            src={picture1}
+          />
           <Card.Body style={{ color: "black" }}>
             <Card.Title className="services__card-title">
               private traning at gym
@@ -22,19 +26,27 @@ export default function Services() {
           </Card.Body>
         </Card>
         <Card className="services__card">
-          <Card.Img variant="top" src={picture2} />
+          <Card.Img
+            className="services__card-img"
+            variant="top"
+            src={picture2}
+          />
           <Card.Body style={{ color: "black" }}>
             <Card.Title className="services__card-title">
               Home Training
             </Card.Title>
-            <Card.Body>(GROUP/FAMILY FITNESS)</Card.Body>
+            <Card.Body className="pb-0">(GROUP/FAMILY FITNESS)</Card.Body>
             <Button className="services__card-btn" variant="primary">
               More
             </Button>
           </Card.Body>
         </Card>
         <Card className="services__card">
-          <Card.Img variant="top" src={picture3} />
+          <Card.Img
+            className="services__card-img"
+            variant="top"
+            src={picture3}
+          />
           <Card.Body style={{ color: "black" }}>
             <Card.Title className="services__card-title">
               Online Training
@@ -45,7 +57,11 @@ export default function Services() {
           </Card.Body>
         </Card>
         <Card className="services__card">
-          <Card.Img variant="top" src={picture4} />
+          <Card.Img
+            className="services__card-img"
+            variant="top"
+            src={picture4}
+          />
           <Card.Body style={{ color: "black" }}>
             <Card.Title className="services__card-title">
               Athletes Training

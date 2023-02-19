@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AboutMe from "./AboutMe";
 import HeaderCarousel from "./HeaderCarousel";
 import NavBar from "./NavBar";
@@ -12,16 +12,25 @@ import Certification from "./Certification";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
 import Messeage from "./Messeage";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Button from "react-bootstrap/Button";
+import Nav from "react-bootstrap/Nav";
+import { useLocation } from "react-router-dom";
 export default function Home() {
+  const location = useLocation();
+
   useEffect(() => {
     document.title = "Home - Paradise";
-  });
+    const hash = location.hash.replace("#", "");
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) element.scrollIntoView({ block: "start" });
+    }
+  }, []);
   return (
     <>
-      <NavBar />
       <HeaderCarousel />
       <Program />
-      <hr />
       <AboutMe />
       <div className="custom-hr"></div>
       <Services />
@@ -33,10 +42,57 @@ export default function Home() {
       <Certification />
       <Gallery />
       <Contact />
-      <Messeage />
-      <div className="push" />
+    </>
+  );
+}
+function Example() {
+  const [show, setShow] = useState(false);
 
-      <p className="m-2">copyright © 2022 Paradise</p>
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Launch
+      </Button>
+
+      <Offcanvas
+        style={{ backgroundColor: "#12111b" }}
+        restoreFocus={false}
+        scroll
+        show={show}
+        onHide={handleClose}
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Menu</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav className="nav-mobile upper-case">
+            <Nav.Link className="nav-link " href="#top">
+              start
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#program">
+              training
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#about-me-wrapper">
+              about me
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#services">
+              my services
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#gallery">
+              gallery
+            </Nav.Link>
+            {/* <Nav.Link className="nav-link" href="#action2">
+                    weblog
+                  </Nav.Link> */}
+            <Nav.Link className="nav-link" href="#contact">
+              contact
+            </Nav.Link>{" "}
+          </Nav>
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 }

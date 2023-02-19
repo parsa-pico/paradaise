@@ -12,7 +12,7 @@ export default function Program() {
   return (
     <div id="program" className="mt-5">
       <header>
-        <h3 className="program-header">4-WEEK BEGINNER’S WORKOUT PROGRAM</h3>
+        <h3 className="program-header ">4-WEEK BEGINNER’S WORKOUT PROGRAM</h3>
       </header>
       <div className="programs__content">
         {details.map((detail, index) => {
