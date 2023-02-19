@@ -28,7 +28,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <>
+    <div style={{ overflowX: "hidden" }}>
       <HeaderCarousel />
       <Program data-aos="fade-right" />
       <AboutMe data-aos="fade-down" />
@@ -43,7 +43,7 @@ export default function Home() {
       <Certification />
       <Gallery />
       <Contact />
-    </>
+    </div>
   );
 }
 function Example() {
