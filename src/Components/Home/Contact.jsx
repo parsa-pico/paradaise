@@ -40,7 +40,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <a href="mailto:info@paradisef.com">pardis_foroozmand@yahoo.com</a>
+            <a href="mailto:pardis_foroozmand@yahoo.com">
+              pardis_foroozmand@yahoo.com
+            </a>
           </div>
         </div>
       </div>
