@@ -8,7 +8,7 @@ export default function MyServices() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div id="my-services-page">
       <h1>MY SERVICES</h1>
       <Plans />
       <MyServicesContent />

@@ -10,7 +10,7 @@ export default function NavBar() {
   const location = useLocation();
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
-  const expand = "md";
+  const expand = "lg";
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -45,7 +45,7 @@ export default function NavBar() {
     <div className="my-nav">
       <Navbar variant="dark" expanded={show} expand={expand}>
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand onClick={() => navigateTo("header-carousel")}>
             <img id="logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle
