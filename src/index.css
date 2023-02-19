@@ -535,7 +535,9 @@ h3 {
   }
   .small-plan-wrapper {
     flex-direction: row;
-    margin: 2rem 10rem;
+    margin: 2rem 0rem;
+    align-items: stretch;
+    justify-content: center;
   }
 }
 /* my services content */
