@@ -4,7 +4,7 @@ import picture from "../Images/IMG_1109-663x1024.jpg";
 export default function Resume() {
   return (
     <section id="resume">
-      <article className="resume__text">
+      <article data-aos="fade-right" className="resume__text">
         <h2 className="resume__heading"> Resume</h2>
         <ul className="resume__list">
           <li>Award won for ISTANBUL`s marathon 2018</li>
@@ -32,7 +32,7 @@ export default function Resume() {
           Facebook
         </Button>
       </article>
-      <div style={{ padding: "2rem" }}>
+      <div data-aos="fade-left" style={{ padding: "2rem" }}>
         <img className="resume__img" src={picture} alt="" />
       </div>
     </section>

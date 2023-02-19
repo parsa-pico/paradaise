@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Program() {
+export default function Program(props) {
   const details = [
     ["mon", "Functional Training"],
     ["tue", "FitnessTraining"],
@@ -10,7 +10,7 @@ export default function Program() {
     ["sat", "Stretch and Relaxing"],
   ];
   return (
-    <div id="program" className="mt-5">
+    <div {...props} id="program" className="mt-5">
       <header>
         <h3 className="program-header ">4-WEEK BEGINNER’S WORKOUT PROGRAM</h3>
       </header>

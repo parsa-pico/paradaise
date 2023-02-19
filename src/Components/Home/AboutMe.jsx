@@ -2,9 +2,9 @@ import React from "react";
 import { Button, Image } from "react-bootstrap";
 import picture1 from "../Images/IMG_6881-square.jpg";
 import picture2 from "../Images/IMG_9742.jpg";
-export default function AboutMe() {
+export default function AboutMe(props) {
   return (
-    <div id="about-me-wrapper">
+    <div {...props} id="about-me-wrapper">
       <section className="about-me ">
         <article className="about-me__text ">
           <h2 className="about-me__heading">Über mich</h2>

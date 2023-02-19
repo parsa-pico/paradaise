@@ -30,13 +30,14 @@ export default function Home() {
   return (
     <>
       <HeaderCarousel />
-      <Program />
-      <AboutMe />
+      <Program data-aos="fade-right" />
+      <AboutMe data-aos="fade-down" />
       <div className="custom-hr"></div>
       <Services />
       <div className="custom-hr"></div>
       <Resume />
       <Adidas />
+
       <Nutrition />
       <div className="custom-hr"></div>
       <Certification />

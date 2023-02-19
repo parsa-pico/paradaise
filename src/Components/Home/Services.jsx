@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <section id="services">
       <h1 className="text-black">My Services</h1>
-      <div className="card-wrapper">
+      <div data-aos="fade-left" className="card-wrapper">
         <Card className="services__card">
           <Card.Img
             className="services__card-img"

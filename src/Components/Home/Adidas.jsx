@@ -32,35 +32,37 @@ export default function Adidas() {
   return (
     <div className="pt-5" id="adidas">
       <h1 className="mb-4">Adidas Runners Frankfurt Captain</h1>
-      <Carousel infinite responsive={responsive}>
-        <div>
-          <img className="img-fluid adidas__img" src={picture1} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture2} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture3} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture4} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture5} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture6} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture7} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture8} alt="" />
-        </div>
-        <div>
-          <img className="img-fluid adidas__img" src={picture9} alt="" />
-        </div>
-      </Carousel>
+      <div data-aos="fade-right">
+        <Carousel infinite responsive={responsive}>
+          <div>
+            <img className="img-fluid adidas__img" src={picture1} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture2} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture3} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture4} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture5} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture6} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture7} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture8} alt="" />
+          </div>
+          <div>
+            <img className="img-fluid adidas__img" src={picture9} alt="" />
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 }
