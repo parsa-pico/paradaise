@@ -30,8 +30,8 @@ export default function Adidas() {
     },
   };
   return (
-    <div id="adidas">
-      <h1>Adidas Runners Frankfurt Captain</h1>
+    <div className="pt-5" id="adidas">
+      <h1 className="mb-4">Adidas Runners Frankfurt Captain</h1>
       <Carousel infinite responsive={responsive}>
         <div>
           <img className="img-fluid adidas__img" src={picture1} alt="" />

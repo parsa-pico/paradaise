@@ -25,7 +25,12 @@ export default function Resume() {
           <li>volleyball athlete for 4 years </li>
           <li>Junior national swimming league champions</li>
         </ul>
-        <Button>Facebook</Button>
+        <Button
+          target="blank"
+          href="https://www.facebook.com/profile.php?id=100010673524514"
+        >
+          Facebook
+        </Button>
       </article>
       <div style={{ padding: "2rem" }}>
         <img className="resume__img" src={picture} alt="" />

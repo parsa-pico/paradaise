@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import picture1 from "../Images/IMG_0352-1242x750.jpg";
 import picture2 from "../Images/family-workout.jpeg";
 import picture3 from "../Images/e-fit1-1024x539.jpeg";
 import picture4 from "../Images/athlete-traning.jpeg";
+import { useNavigate } from "react-router-dom";
+
 export default function Services() {
+  const navigate = useNavigate();
+
   return (
     <section id="services">
       <h1 className="text-black">My Services</h1>
@@ -20,7 +24,11 @@ export default function Services() {
             <Card.Title className="services__card-title">
               private traning at gym
             </Card.Title>
-            <Button className="services__card-btn" variant="primary">
+            <Button
+              onClick={() => navigate("/my-services")}
+              className="services__card-btn"
+              variant="primary"
+            >
               More
             </Button>
           </Card.Body>
@@ -36,7 +44,11 @@ export default function Services() {
               Home Training
             </Card.Title>
             <Card.Body className="pb-0">(GROUP/FAMILY FITNESS)</Card.Body>
-            <Button className="services__card-btn" variant="primary">
+            <Button
+              onClick={() => navigate("/my-services")}
+              className="services__card-btn"
+              variant="primary"
+            >
               More
             </Button>
           </Card.Body>
@@ -51,7 +63,11 @@ export default function Services() {
             <Card.Title className="services__card-title">
               Online Training
             </Card.Title>
-            <Button className="services__card-btn" variant="primary">
+            <Button
+              onClick={() => navigate("/my-services")}
+              className="services__card-btn"
+              variant="primary"
+            >
               More
             </Button>
           </Card.Body>
@@ -66,7 +82,11 @@ export default function Services() {
             <Card.Title className="services__card-title">
               Athletes Training
             </Card.Title>
-            <Button className="services__card-btn" variant="primary">
+            <Button
+              onClick={() => navigate("/my-services")}
+              className="services__card-btn"
+              variant="primary"
+            >
               More
             </Button>
           </Card.Body>

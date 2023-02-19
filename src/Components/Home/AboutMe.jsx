@@ -35,7 +35,13 @@ export default function AboutMe() {
           <h2 className="about-me__last-heading">
             So,Wie kann ich dir helfen?
           </h2>
-          <Button className="about-me__btn">Instagram</Button>
+          <Button
+            href="http://www.instagram.com/paradiseforoozmand"
+            target="blank"
+            className="about-me__btn"
+          >
+            Instagram
+          </Button>
         </article>
         <div>
           <img className=" about-me__img" src={picture1} alt="" />
@@ -69,7 +75,13 @@ export default function AboutMe() {
           </p>
           <br />
           <h2 className="about-me__last-heading">So How can I help?</h2>
-          <Button className="about-me__btn">Instagram</Button>
+          <Button
+            href="http://www.instagram.com/paradiseforoozmand"
+            target="blank"
+            className="about-me__btn"
+          >
+            Instagram
+          </Button>
         </article>
         <div>
           <img className=" about-me__img" src={picture2} alt="" />

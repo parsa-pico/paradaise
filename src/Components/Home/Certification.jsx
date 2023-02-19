@@ -24,7 +24,13 @@ export default function Certification() {
             Acro-yoga workshop Attendance certificate
           </li>
         </ul>
-        <Button className="certification__btn">Check24</Button>
+        <Button
+          target="blank"
+          href="https://profis.check24.de/profil/pardis-foroozmand/qjjwgq"
+          className="certification__btn"
+        >
+          Check24
+        </Button>
       </article>
       <div>
         <img className="certification__img" src={picture} alt="" />

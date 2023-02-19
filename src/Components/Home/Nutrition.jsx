@@ -19,7 +19,7 @@ export default function Nutrition() {
           unbelievable difference in all aspects of your physical performance.
         </p>
       </section>
-      <Button className="mt-5">WEBLOG</Button>
+      {/* <Button className="mt-5">WEBLOG</Button> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import video from "../Videos/IMG_2096.mp4";
+import video from "../Videos/traning.mp4";
+import videoCompressed from "../Videos/traning-compressed.mp4";
 export default function MyServicesContent() {
   return (
     <section id="my-services-content">
@@ -23,6 +24,7 @@ export default function MyServicesContent() {
       <div>
         <video className="myservices-content__video" muted autoPlay loop>
           <source src={video} type="video/mp4" />
+          <source src={videoCompressed} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
